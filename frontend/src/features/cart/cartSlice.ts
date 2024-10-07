@@ -2,8 +2,9 @@ import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 // Define the shape of an item in the cart
 interface CartItem {
-  id: string; // Adjust the type based on your item's ID type
-  quantity: number;
+  id: number; // Adjust the type based on your item's ID type
+  name: string,
+  quantity: number
   // Add other properties as needed, e.g., name, price, etc.
 }
 
@@ -36,7 +37,7 @@ const cartSlice = createSlice({
         }
       }
     },
-    removeItem: (state, action: PayloadAction<string>) => {
+    removeItem: (state, action: PayloadAction<number>) => {
       const itemId = action.payload;
       // Ensure the payload is valid before attempting to remove
       if (itemId) {
