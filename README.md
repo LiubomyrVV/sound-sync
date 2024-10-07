@@ -62,7 +62,7 @@ src/
 │   ├── Profile.tsx    # User profile page
 │   └── Customization.tsx # Page for customizing app appearance
 │
-├── redux/             # Redux store, actions, and reducers
+├── store/             # Redux store, actions, and reducers
 │   ├── store.ts       # Store configuration (middleware, reducers)
 │   └── slices/        # Redux slices (e.g., musicSlice, userSlice, favoritesSlice)
 │       ├── userSlice.ts # Redux slice for user-related state
